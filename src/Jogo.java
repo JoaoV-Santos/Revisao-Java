@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Jogo {
 
     private String titulo;
@@ -43,7 +45,18 @@ public class Jogo {
     }
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
+        System.out.println("MENU\n\n" +
+                "1. ADICIONAR NOVO JOGO\n" +
+                "2. APLICAR DESCONTO NO JOGO\n" +
+                "3. AUMENTAR PRECO DO JOGO\n" +
+                "4. ATUALIZAR CLASSIFICACAO ETARIA DO JOGO\n" +
+                "5. MOSTRAR DETALHES DOS JOGOS\n" +
+                "6. SAIR");
+
+
+        in.close();
     }
 
 }
